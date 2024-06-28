@@ -3,17 +3,17 @@ import {Link, NavLink } from 'react-router-dom';
 
 function Header() {
   return (
-    <nav className="bg-black bg-opacity-10 backdrop-filter backdrop-blur-lg shadow-lg p-4 sticky top-0 z-20">
+    <nav className="bg-white bg-opacity-20 h-[80px] backdrop-filter backdrop-blur-lg shadow-lg p-4 sticky top-0 z-20">
       <div className="container mx-auto flex justify-between items-center">
-      <div className="text-2xl font-bold text-gray-900 transition-all duration-300 hover:text-blue-500 hover:scale-110 cursor-pointer">
+      <div className=" text-2xl font-bold text-black text-shadow-md shadow-white transition-all duration-300 hover:text-blue-500 hover:scale-110 cursor-pointer">
           SDS Technologies
         </div>
-        <ul className="flex space-x-4 gap-5">
+        <ul className="flex space-x-4 gap-5 ">
   <li>
     <NavLink 
       to="/" 
       className={({ isActive }) => 
-        isActive ? 'text-blue-500 border-b-2 border-blue-500 pb-2 font-bold'  : 'text-gray-900 hover:text-gray-700'
+        isActive ? 'text-blue-500 bg-white px-3 py-2 rounded-2xl border-b-2 border-blue-500  pb-2 font-bold'  : 'text-gray-900 hover:text-gray-700'
       }
     >
       Home
@@ -23,7 +23,7 @@ function Header() {
     <NavLink 
       to="/about" 
       className={({ isActive }) => 
-        isActive ? 'text-blue-500 border-b-2 border-blue-500 pb-2 font-bold' : 'text-gray-900 hover:text-gray-700'
+        isActive ? 'text-blue-500   bg-white px-3 py-2 rounded-2xl border-b-2 border-blue-500 pb-2 font-bold' : 'text-gray-900 hover:text-gray-700'
       }
     >
       About
@@ -33,7 +33,7 @@ function Header() {
     <NavLink 
       to="/services" 
       className={({ isActive }) => 
-        isActive ? 'text-blue-500 border-b-2 border-blue-500 pb-2 font-bold' : 'text-gray-900 hover:text-gray-700'
+        isActive ? 'text-blue-500  bg-white px-3 py-2 rounded-2xl border-b-2 border-blue-500 pb-2 font-bold' : 'text-gray-900 hover:text-gray-700'
       }
     >
       Services
@@ -43,10 +43,10 @@ function Header() {
     <NavLink 
       to="/courses" 
       className={({ isActive }) => 
-        isActive ? 'text-blue-500 border-b-2 border-blue-500 pb-2 font-bold' : 'text-gray-900 hover:text-gray-700'
+        isActive ? 'text-blue-500  bg-white px-3 py-2 rounded-2xl  border-b-2 border-blue-500 pb-2 font-bold' : 'text-gray-900 hover:text-gray-700'
       }
     >
-      Courses Offered
+      Courses 
     </NavLink>
   </li>
 </ul>

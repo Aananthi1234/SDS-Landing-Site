@@ -1,12 +1,33 @@
 import React from 'react';
-import HeroBg from '../../assets/HeroLayout.jpeg';
+import mount from '../../assets/mount.jpg';
 
 const Hero = () => {
   return (
-    <div className="relative h-screen w-full flex items-center justify-center bg-slate-500">
-      <div
-        className="absolute inset-0 bg-cover bg-center opacity-50 hover:blur-sm"
-        style={{ backgroundImage: `url(${HeroBg})` }}
+    <>
+    <div className="w-[100%] h-[100vh]  flex flex-col justify-center items-center">
+    <h2 className='text-6xl font-semibold text-green-700'>SDS TECHNOLOGIES</h2>
+      <img src={mount} className=' h-[100%] w-[100%] object-cover'/>
+    </div>
+    </>
+  );
+}
+
+export default Hero;
+
+
+
+
+
+
+
+
+
+
+
+
+   {/* <div
+        className="absolute inset-0 bg-cover bg-center opacity-50 "
+        style= {{ backgroundImage: `url(${HeroBg})` }}
       ></div>
       <div className="relative z-10 text-center p-5 text-white ">
         <h1 className="text-5xl font-bold mb-4">Welcome to Our Website</h1>
@@ -14,9 +35,4 @@ const Hero = () => {
         <button className="bg-red-500 hover:bg-red-600 text-white font-semibold py-2 px-4 rounded transition duration-300">
           Get Started
         </button>
-      </div>
-    </div>
-  );
-}
-
-export default Hero;
+      </div> */}
